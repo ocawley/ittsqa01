@@ -1,18 +1,20 @@
 #!/bin/bash
 
-
-
 # Test Case 1
 # Inout: Exam Score: 49 & Practical Score: 49
 # Expected Output= 'Fail' - as combined scores are less than 50
 # Actual: 'Fail'
 
 output=$(java grades_v2 49 49)
-if [ $output == "Fail" ] 
-then
+pass=0
+fail=0
+
+if [ $output == "Fail" ]; then
 	echo 'Test case 1 Passed'
-else
+       	pass=$((pass + 1))
+else 
 	echo 'Test case 1 Failed'
+	fail=$((fail + 1))
 fi
 	
 
@@ -23,11 +25,12 @@ fi
 
 output1=(java grades_v2 39 100)
 
-if [ $output1 == "Component Fail" ] 
-then
+if [ $output1 == "Component Fail" ]; then
 	echo 'Test case 2 Passed'
+	pass=$(($pass + 1))
 else
 	echo 'Test case 2 Failed'
+	fail=$(($fail + 1))
 fi
 
 
@@ -36,14 +39,14 @@ fi
 #Expected Output: 'Pass' - combined scores between 50 and 80 inclusive are pass
 #Actual: 'Pass'
 
-
 output2=(java grades_v2 51 51)
 
-if [ $output2 == "Pass" ] 
-then
+if [ $output2 == "Pass" ]; then
 	echo 'Test case 3 Passed'
+	pass=$(($pass + 1))
 else
 	echo 'Test case 3 Failed'
+	fail=$(($fail + 1))
 fi
 
 
@@ -51,12 +54,21 @@ fi
 #Exam Score: 50% (Pass) & Practical Score: 50% (Pass) 
 #Expected Output: Invalid input
 #Actual: Invalid input
+
 output3=(java grades_v2 50% 50%)
-if [ $output3 == "Invalid input" ] 
-then
+if [ $output3 == "Invalid input" ]; then
 	echo 'Test case 4 Passed'
+	pass=$(($pass + 1))
 else
 	echo 'Test case 4 Failed'
+	fail=$(($fail + 1))
 fi
+
+echo '==================='
+echo 'Test Suite Summary:'
+echo '==================='
+echo 'Pass:' $pass
+echo 'Fail:'  $fail
+
 
 
