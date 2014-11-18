@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.amazon.co.uk/" />
+<title>x00046108-Testcase2.html.</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">x00046108-Testcase2.html.</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=nav_cat_12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Camera &amp; Photo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Amazon.co.uk: Camera &amp; Photo: Electronics &amp; Photo: Accessories, Binoculars, Telescopes &amp; Optics, Digital Cameras &amp; More</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=#bin_1_ns_1AN9PGZPNNM0JMRKPA75_1258_</td>
+	<td>label=Digital SLRs</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=bin_2_ns_1AN9PGZPNNM0JMRKPA75_1258_</td>
+	<td>label=20 MP &amp; more</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=bin_6_ns_1AN9PGZPNNM0JMRKPA75_1258_</td>
+	<td>label=£200 - £500</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#queryButton_ns_1AN9PGZPNNM0JMRKPA75_1258_ &gt; input[type=&quot;image&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='result_0']/div/div[2]/div/a/h2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=bbop-check-box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mbb-offeringID-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mbb-offeringID-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=add-to-cart-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=hlb-ptc-btn-native</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
